@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="space-y-8">
+    <!-- Header Banner -->
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-950/40 via-catacomb to-obsidian p-8 border border-amber-900/30 shadow-2xl">
+        <div class="flex items-center space-x-3 mb-2">
+            <span class="candle-flame text-2xl">🕯️</span>
+            <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Dia de los Muertos Memorial</span>
+        </div>
+        <h1 class="text-3xl font-extrabold text-white tracking-tight">The Git Ofrenda</h1>
+        <p class="text-gray-400 mt-2 max-w-2xl text-sm leading-relaxed">
+            An altar honoring the code that never made it to production. We celebrate the experiments, late-night spikes, and forgotten features that taught us how to build better software.
+        </p>
+    </div>
+
+    <!-- Memorial Content -->
+    <div class="bg-catacomb/80 border border-purple-950/60 rounded-2xl p-6 sm:p-8 space-y-6">
+        <div class="flex items-center justify-between border-b border-purple-950/60 pb-4">
+            <h2 class="text-lg font-bold text-gray-200 flex items-center space-x-2">
+                <span>🪦 Inscribed Tombstones</span>
+            </h2>
+            <span class="text-xs text-gray-500 font-mono">Source: OFRENDA.md</span>
+        </div>
+
+        <div id="memorial-container" class="prose prose-invert max-w-none text-sm text-gray-300 leading-relaxed font-mono whitespace-pre-wrap bg-obsidian/70 p-6 rounded-xl border border-purple-950/60">
+{{ ofrenda_content }}
+        </div>
+    </div>
+</div>
+{% endblock %}
