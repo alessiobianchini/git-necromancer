@@ -38,7 +38,10 @@ Instead of staring at stale git logs, GitNecromancer allows you to:
 
 ## Demo
 
-GitNecromancer operates both as a rich terminal CLI and an obsidian-dark web dashboard called **"The Git Catacombs"**.
+You can experience the live interactive dashboard immediately without installing anything:  
+👉 **[https://git-necromancer.onrender.com](https://git-necromancer.onrender.com)**
+
+GitNecromancer operates both as an obsidian-dark web dashboard called **"The Git Catacombs"** and a rich terminal CLI.
 
 ### 1. The Terminal Séance
 

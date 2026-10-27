@@ -9,6 +9,8 @@
 > **The Open-Source Séance Engine for Dead Code, Abandoned Branches, and Repo Graveyards.**  
 > Built for the **Hacktoberfest 2026 Open-Source AI Challenge Week 4: "Ghost in the Machine"**.
 
+🔮 **Live Cloud Demo**: [https://git-necromancer.onrender.com](https://git-necromancer.onrender.com)
+
 ---
 
 ## 🪦 The Problem: Every Repo is a Cemetery
