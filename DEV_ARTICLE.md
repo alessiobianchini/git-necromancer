@@ -1,15 +1,10 @@
 ---
 title: "GitNecromancer: The Open-Source Séance Engine for Dead Code and Repo Graveyards"
-published: false
-description: "Turn abandoned branches into speaking code ghosts with local Gemma 2 2B, Sentry Agent Tracing, ElevenLabs, and Render."
-tags: devchallenge, hf26challenge, gemma, render, sentry
-cover_image: ""
-canonical_url: ""
+published: true
+tags: devchallenge, hf26challenge, gemma, render
 ---
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 4: Ghost in the Machine](https://dev.to/challenges/hacktoberfest-week4-2026-10-26)*
-
----
 
 ## What I Built
 
@@ -24,7 +19,7 @@ As developers, we carry a collective guilt. We look at our branch list, shudder,
 
 Yet, we never do. Why? Because of a primal fear: **what if there is a vital piece of context or logic trapped inside that dead branch?** Running a blind `git branch -D` feels like desecrating a tomb without knowing who was buried there.
 
-So for the final week of Hacktoberfest 2026 (*Ghost in the Machine*), I built **GitNecromancer (💀🔮)**: an atmospheric open-source developer tool and gothic web dashboard that turns repository cleanup into a supernatural séance powered by **Google Gemma 2 2B** running locally via **Ollama**, **Sentry Agent Tracing**, **ElevenLabs** eerie audio synthesis, and **Render**.
+For the final week of Hacktoberfest 2026 (*Ghost in the Machine*), I built **GitNecromancer (💀🔮)**: an atmospheric open-source developer tool and gothic web dashboard that turns repository cleanup into a supernatural séance powered by **Google Gemma 2 2B** running locally via **Ollama**, **Sentry Agent Tracing**, **ElevenLabs** eerie audio synthesis, and **Render**.
 
 Instead of staring at stale git logs, GitNecromancer allows you to:
 1. **Survey the Graveyard**: Safely inspect unmerged branches, orphaned stashes, and commit stagnation across your repositories.
@@ -38,7 +33,7 @@ Instead of staring at stale git logs, GitNecromancer allows you to:
 
 ## Demo
 
-You can experience the live interactive dashboard immediately without installing anything:  
+Experience the live interactive dashboard immediately without installing anything:  
 👉 **[https://git-necromancer.onrender.com](https://git-necromancer.onrender.com)**
 
 GitNecromancer operates both as an obsidian-dark web dashboard called **"The Git Catacombs"** and a rich terminal CLI.
@@ -91,7 +86,7 @@ Ritual choices:
 
 ### 2. The Git Catacombs (Web Dashboard)
 
-Launching `python cli.py web` opens the gothic dashboard on port 8000:
+Launching `python cli.py web` (or visiting the [live Render deployment](https://git-necromancer.onrender.com)) opens the gothic dashboard:
 - **Graveyard Cards**: Displays time in purgatory, creator, and last commit preview.
 - **Interactive Séance Modal**: Features a flickering candle animation, streaming monologue, and an audio player for ElevenLabs ghost whispering.
 - **One-Click Patch & Ofrenda**: Copy resurrection patches or grant final rites with instant DOM updates.
@@ -158,7 +153,7 @@ GitNecromancer embraces this through **The Git Ofrenda**: when you grant peace t
 
 ---
 
-## Why Open Innovation Matters
+## Why Does Open Innovation Matter?
 
 The "Ghost in the Machine" theme is often treated as a spooky trope, but in software engineering, ghosts are very real: they are the legacy code, forgotten architectural decisions, and abandoned branches that haunt our repositories.
 
@@ -167,7 +162,28 @@ This project demonstrated why **open-weight models like Gemma 2** are essential 
 2. **Affordability**: Building local developer utilities shouldn't require monthly SaaS subscriptions or token metering. A local Gemma 2 2B model costs $0.00 to run for a million séances.
 3. **Hackability & Joy**: Open tooling allows us to take serious technical problems—like branch drift, merge debt, and repository rot—and turn them into creative, joyful, and memorable experiences.
 
-Clean your repo cemeteries, honor your fallen code, and happy Hacktoberfest! 🪦🕯️
+---
+
+## The Spirit of It
+
+The breakthrough moment happened at midnight while running the first séance against a dusty branch from 2024. 
+
+Seeing the flickering ASCII candle appear in the terminal, followed by Gemma 2 delivering a melancholic, first-person confession:
+> *"I was summoned into existence 255 days ago by Devon Vance. I still recall the frantic keystrokes of 'WIP: switch users endpoint to GraphQL schema'... Alas, priorities shifted like mist in the night..."*
+
+Every developer on the team immediately understood. We didn't just delete a branch; we listened to its story, extracted what was valuable, and laid it to rest with dignity. It turned a chore into an unforgettable ritual.
+
+---
+
+## Prize Categories
+
+I am submitting GitNecromancer for the following Hacktoberfest 2026 categories:
+
+- 🏆 **Best Use of Gemma ($200)**: Local, offline inference via `gemma2:2b` using Ollama for persona embodiment, architectural autopsies, and patch synthesis.
+- 🚀 **Best Use of Render ($200)**: Deployed cloud service using `render.yaml` with the interactive Git Catacombs web dashboard at [https://git-necromancer.onrender.com](https://git-necromancer.onrender.com).
+- 🔍 **Best Use of Sentry Agent Tracing ($100)**: Full OpenTelemetry `gen_ai.chat` spans instrumenting token usage, latency, and séance execution.
+- 🎙️ **Best Use of ElevenLabs ($100)**: Eerie voice synthesis rendering Gemma's spectral monologues into whispered confessions.
+- 👑 **Overall Week 4 Winner ($250)**: An authentic, human interpretation of the "Ghost in the Machine" theme solving a universal developer pain point.
 
 ---
 *Built with 💀 by [Alessio Bianchini](https://github.com/alessiobianchini). Let me know in the comments: what is the oldest dead branch haunting your repository right now?*
